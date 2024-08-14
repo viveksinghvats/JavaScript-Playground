@@ -1,0 +1,2 @@
+1. Difference between package.json and package-lock.json: Lock file have the exact versions of dependencies, while package.json have '~' and '^' because of this will have tentative versions in the file.
+2. npm vs npx: npm is used to install or update packages, while npx is used for exectuing a package

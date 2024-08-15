@@ -1,9 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const parent = React.createElement('div', { id: "parent" }, React.createElement('div', { id: 'child' }, React.createElement('h1', { id: 'heading' }, 'I am h1 tag in a nested tag')));
+// const reactHeading = React.createElement('h1', {id: 'heading'}, 'Hello from react');
+// const jsxHeading = <h1 id ='heading'>Hello from react</h1>
 
-console.log(parent);
+// console.log(reactHeading);  Both are same.
+// console.log(jsxHeading);  
 
-const dom = ReactDOM.createRoot(document.getElementById('root'));
-dom.render(parent);
+const Title = () => (
+    <div>
+        <h1>Title Functional Component</h1>
+    </div>
+);
+
+const loop = (fun) => {
+    for (let i = 0; i < 5; i++) {
+        fun()
+    }
+}
+
+const Heading = () => {
+    return (
+        <div>
+            <Title />
+            {Title()}
+            <Title></Title>
+            <h1 id='heading'> Heading Functional Component</h1>
+             
+        </div>
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<Heading />);

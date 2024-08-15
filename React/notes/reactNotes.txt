@@ -1,2 +1,9 @@
 1. Difference between package.json and package-lock.json: Lock file have the exact versions of dependencies, while package.json have '~' and '^' because of this will have tentative versions in the file.
 2. npm vs npx: npm is used to install or update packages, while npx is used for exectuing a package
+3. JSX is HTML like syntax not html.
+4. JSX is used to create React.element => React.createElement(tag, attribute, childeren/body);
+5. JSX is not pure javaScript, Babel takes JSX and convert it to JS code before it reaches the JS engine.
+6. Attributes passed in JSX for a tag will follow camelCase.
+7. Functional Component should always be Uppercase. Functional Component is nothing but a function which returns JSX.
+8. We can write javaScript code in JSX using {js code}.
+9. 

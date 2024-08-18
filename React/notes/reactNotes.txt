@@ -6,4 +6,12 @@
 6. Attributes passed in JSX for a tag will follow camelCase.
 7. Functional Component should always be Uppercase. Functional Component is nothing but a function which returns JSX.
 8. We can write javaScript code in JSX using {js code}.
-9. 
+9. We use props to pass data into functional components. It's just like passing arguments to the functions.
+10: Keys are important while rendering children, keys should be unique among the siblings, not passing the key will force the react to re-render everything after a sibling changes.
+11. using Index as keys are bad practice => (No Keys <<< Index as keys <<<<<<<<<< Unique key) among the siblings.
+12. Two types of exports => 1. export defult Component(defult) 2. export Component (Named export).
+13. React Hooks are noraml utility JS function.(useState, useEffect). 
+14. React uses Reconcilliation Algorithm (React fiber).
+15. Virtual Dom is representation of Actual Dom. Virtual Dom is just a JS object(React.element(object));
+16: const [list, setList] = useState(initialData). Here setList is a callback function which works as trigger to update the virtual Dom, when state change happen.
+17. If we have to do something, after UI is rendered we use useEffect. useEffect is called after the component rendered.

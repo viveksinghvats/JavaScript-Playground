@@ -15,3 +15,6 @@
 15. Virtual Dom is representation of Actual Dom. Virtual Dom is just a JS object(React.element(object));
 16: const [list, setList] = useState(initialData). Here setList is a callback function which works as trigger to update the virtual Dom, when state change happen.
 17. If we have to do something, after UI is rendered we use useEffect. useEffect is called after the component rendered.
+18. useEffect is called on every render. but if dependency array is empty, it will call only one time, or if dependency mentioned, then it will be called when dependency changes.
+19. While moving to a different page through a link never use anchor tag, use Link component provided by react-router-dom, Link don't reload the whole page, while anchor does.
+

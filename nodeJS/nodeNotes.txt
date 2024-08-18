@@ -1,0 +1,3 @@
+1. V8 can be run on any c+++ application.
+2. ECMAScript is a standard for scripting languages.
+3. Modules protects their variables and functions from leaking. When we require a module it will run all the code of that module but it will not be able to access it's private variable and functions untils they are exported.

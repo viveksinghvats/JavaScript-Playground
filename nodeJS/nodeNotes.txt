@@ -1,3 +1,11 @@
 1. V8 can be run on any c+++ application.
 2. ECMAScript is a standard for scripting languages.
 3. Modules protects their variables and functions from leaking. When we require a module it will run all the code of that module but it will not be able to access it's private variable and functions untils they are exported.
+4. Main difference between CJS(require) and ES6(import) is CJS runs synchronous while ES6 give us the capacity to run it asynchronousally. CJS uses non-strict mode while in ES6 is in strict mode.
+5. JS engine(V8 runs only synchronous code) so as soon as it find async code it offloads that to libuv along with a callback, which will be executed by V8 again when request fulfilled and returned by libuv. 
+6. Javascript is JIT(just in time), which have both, Ignition intrepretter, and Turbofan compiler. Ignition intrepretter offloads the resuasble functions to compiler, so that it can run fast in next iteration. Turbofan also de-optimize when variable type of that function changes.
+7. Very Imortant: Event loop always stays idle at Poll phase, if there is no callback to execute.
+8. By Default UV_THREADPOOL_SIZE is 4.
+9. Thread Pool is utllize by fs, dns-lookup, crypto and user specified input(c++ code).
+10. epoll(Linux) and kqueue(macos) (Scalable I/O event notification mechanism). (fds- socket description).
+11. EventEmitter, Stream, Buffer and Pipes.

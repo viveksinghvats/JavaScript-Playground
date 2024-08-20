@@ -1,0 +1,16 @@
+1. Hooks(useState, useEffect, useContext, useReducer, useMemo, useCallBack, useRef)
+2. Higher Order Components(what, why, when, how)
+3. life cycles methods of Components
+4. State management(props drilling, state/props, context)
+5. Redux/Zustand
+6. Custom Hooks
+7. Lazy Loading(code splitting, chucnking, suspense)
+8. Virtual Dom
+9. SSR(Server side rendering) / CSR(Client Side rendering) => (Diff, Seo, Performance)
+10. Routing => RBAC (Protected routes)
+11. Testing
+12. Async tasks
+13. Performance(Asset optimization)
+
+
+

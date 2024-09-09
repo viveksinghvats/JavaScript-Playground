@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,6 +17,62 @@
         root.appendChild(heading);
     </script>
 
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <p>A trip has been created in Leon for customer <Customer name>. Please find details for the trip below, and a link
+            to the trip in TMSe here: <a href='https://qa-tmse.uas.aero/trip/HOU-2400951'>${tripInfo.tripNo}</a></p>
+    <p><b>Trip no: </b>${tripInfo.tripNo}</p>
+    <p><b>Customer: </b>${tripInfo.customer}</p>
+    <p><b>Operator: </b>${tripInfo.operator}</p>
+    <p><b>A/C Reg: </b>${tripInfo.acreg}</p>
+    <p><b>A/C Type: </b>${tripInfo.actype}</p>
+    <p><b>MTOW: </b>${tripInfo.mtow} ${tripInfo.mtowUnit}</p>
+    <br />
+    <h4>Schedule:</h4>
+    <table width="100%">
+        <tr>
+            <th>
+                Departure
+            </th>
+            <th>
+                Arrival
+            </th>
+            <th>
+                ETD
+            </th>
+            <th>
+                ETA
+            </th>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>

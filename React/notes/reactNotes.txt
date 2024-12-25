@@ -17,4 +17,9 @@
 17. If we have to do something, after UI is rendered we use useEffect. useEffect is called after the component rendered.
 18. useEffect is called on every render. but if dependency array is empty, it will call only one time, or if dependency mentioned, then it will be called when dependency changes.
 19. While moving to a different page through a link never use anchor tag, use Link component provided by react-router-dom, Link don't reload the whole page, while anchor does.
-
+20. In class base components never update the state variable directly.
+21. In class base components we use componentDidMount to call the api, similar to useEffect of function components.
+22. When a component have multiple children classes in it, then first it will complete render phase(calling constructor, then render function) of all the childrens, then it will start calling commit phase of them(componentDidMount function). This is called lifecycle of react components.
+23. componentDidupdate function is called after initial mounting phase, when update phase start after the mounting phase(Dom updated with latest values). 
+24. componentDidUnmount is called when we close the component.
+25. When useEffect is called it callled after render method of component, we can also return a callback function from useEffect which will be called when we will unmount.

@@ -1,0 +1,3 @@
+select name from emp1 where (
+    select count(*) from emp2 where emp1.salary <= emp2.salary
+) = 2;
